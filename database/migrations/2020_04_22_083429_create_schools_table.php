@@ -15,6 +15,13 @@ class CreateSchoolsTable extends Migration
     {
         Schema::create('schools', function (Blueprint $table) {
             $table->bigIncrements('id');
+
+            $table->string('schoolname', 250)->nullable()->default('test school');
+            $table->string('schooladdress', 250)->nullable()->default('test school');
+            $table->string('schoolphone', 250)->nullable()->default('0911113099');
+            $table->string('schoolemail', 250)->nullable()->default('test@school.com');
+            $table->string('ministryofeducationunniqueid', 250)->nullable()->default('school identification');
+            $table->unsignedBigInteger('schooladminid');
             $table->timestamps();
         });
     }

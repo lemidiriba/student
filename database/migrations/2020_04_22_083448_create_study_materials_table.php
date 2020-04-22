@@ -15,6 +15,13 @@ class CreateStudyMaterialsTable extends Migration
     {
         Schema::create('study_materials', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('studymaterialfilename', 250)->nullable()->default('test material');
+            $table->unsignedBigInteger('subjectid');
+            $table->unsignedBigInteger('schoolid');
+            $table->unsignedBigInteger('adminid');
+
+            $table->longText('description')->nullable()->default('sample subject discription');
+
             $table->timestamps();
         });
     }
