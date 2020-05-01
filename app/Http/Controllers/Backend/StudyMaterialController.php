@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\StudyMaterial;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class StudyMaterialController extends Controller
 {

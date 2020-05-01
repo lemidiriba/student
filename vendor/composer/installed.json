@@ -3229,6 +3229,67 @@
         "abandoned": "php-parallel-lint/php-console-highlighter"
     },
     {
+        "name": "jorenvanhocht/laravel-share",
+        "version": "3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jorenvh/laravel-share.git",
+            "reference": "c82c43b654a48964a8949195c5f48c9e7cb1ec95"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jorenvh/laravel-share/zipball/c82c43b654a48964a8949195c5f48c9e7cb1ec95",
+            "reference": "c82c43b654a48964a8949195c5f48c9e7cb1ec95",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "orchestra/testbench": "~3.5.0",
+            "phpunit/phpunit": "~6.5"
+        },
+        "time": "2019-12-30T20:39:14+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Jorenvh\\Share\\Providers\\ShareServiceProvider"
+                ],
+                "aliases": {
+                    "Share": "Jorenvh\\Share\\ShareFacade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Jorenvh\\Share\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Joren Van Hocht",
+                "email": "joren@codeswitch.be",
+                "homepage": "https://codeswitch.be",
+                "role": "Developer"
+            }
+        ],
+        "description": "Optional package for Laravel to generate social share links.",
+        "homepage": "https://github.com/jorenvh/laravel-share",
+        "keywords": [
+            "laravel",
+            "share",
+            "social links",
+            "social share links"
+        ]
+    },
+    {
         "name": "justinrainbow/json-schema",
         "version": "5.2.8",
         "version_normalized": "5.2.8.0",
@@ -6133,6 +6194,74 @@
         ]
     },
     {
+        "name": "realrashid/sweet-alert",
+        "version": "v3.1.4",
+        "version_normalized": "3.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/realrashid/sweet-alert.git",
+            "reference": "d78f0ff7a9e065da2c79fa1c35a5fe243ae9bb02"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/realrashid/sweet-alert/zipball/d78f0ff7a9e065da2c79fa1c35a5fe243ae9bb02",
+            "reference": "d78f0ff7a9e065da2c79fa1c35a5fe243ae9bb02",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "^5.4|^6.0|^7.0",
+            "php": "^7.2"
+        },
+        "require-dev": {
+            "symfony/thanks": "^1.0"
+        },
+        "time": "2020-03-31T15:40:35+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "RealRashid\\SweetAlert\\SweetAlertServiceProvider"
+                ],
+                "aliases": {
+                    "Alert": "RealRashid\\SweetAlert\\Facades\\Alert"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RealRashid\\SweetAlert\\": "src/"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Rashid Ali",
+                "email": "realrashid05@gmail.com",
+                "homepage": "https://realrashid.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "A BEAUTIFUL, RESPONSIVE, CUSTOMIZABLE, ACCESSIBLE (WAI-ARIA) REPLACEMENT FOR JAVASCRIPT'S POPUP BOXES FOR LARAVEL BY RASHID ALI",
+        "homepage": "https://github.com/realrashid/sweet-alert",
+        "keywords": [
+            "alert",
+            "laravel",
+            "laravel-package",
+            "notifier",
+            "noty",
+            "sweet-alert",
+            "sweet-alert2",
+            "toast"
+        ]
+    },
+    {
         "name": "roave/security-advisories",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -7291,6 +7420,63 @@
             "rbac",
             "roles",
             "security",
+            "spatie"
+        ]
+    },
+    {
+        "name": "spatie/laravel-searchable",
+        "version": "1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spatie/laravel-searchable.git",
+            "reference": "6ecc571254e71afe5f237de355be740cdf726af9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spatie/laravel-searchable/zipball/6ecc571254e71afe5f237de355be740cdf726af9",
+            "reference": "6ecc571254e71afe5f237de355be740cdf726af9",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "~5.8.0|^6.0|^7.0",
+            "php": "^7.2"
+        },
+        "require-dev": {
+            "larapack/dd": "^1.0",
+            "orchestra/testbench": "~3.8.0|^4.0|^5.0",
+            "phpunit/phpunit": "^7.5|^8.0"
+        },
+        "time": "2020-03-03T14:11:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spatie\\Searchable\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alex Vanderbist",
+                "email": "alex@spatie.be",
+                "homepage": "https://spatie.be",
+                "role": "Developer"
+            },
+            {
+                "name": "Freek Van der Herten",
+                "email": "freek@spatie.be",
+                "homepage": "https://spatie.be",
+                "role": "Developer"
+            }
+        ],
+        "description": "Pragmatically search through models and other sources",
+        "homepage": "https://github.com/spatie/laravel-searchable",
+        "keywords": [
+            "laravel-searchable",
             "spatie"
         ]
     },
@@ -9296,6 +9482,70 @@
             "manager",
             "tinymce",
             "upload"
+        ]
+    },
+    {
+        "name": "uxweb/sweet-alert",
+        "version": "v2.0.3",
+        "version_normalized": "2.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/uxweb/sweet-alert.git",
+            "reference": "5ad72efabaa8e864443247daeafeae69a0913f7a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/uxweb/sweet-alert/zipball/5ad72efabaa8e864443247daeafeae69a0913f7a",
+            "reference": "5ad72efabaa8e864443247daeafeae69a0913f7a",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/session": "~5.0|^6.0|^7.0",
+            "illuminate/support": "~5.0|^6.0|^7.0",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.16",
+            "mockery/mockery": "^1.0",
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2019-12-24T07:25:40+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "UxWeb\\SweetAlert\\SweetAlertServiceProvider"
+                ],
+                "aliases": {
+                    "Alert": "UxWeb\\SweetAlert\\SweetAlert"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "UxWeb\\SweetAlert\\": "src/SweetAlert/"
+            },
+            "files": [
+                "src/SweetAlert/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Uziel Bueno",
+                "email": "ux.webs@gmail.com"
+            }
+        ],
+        "description": "A simple PHP package to show Sweet Alerts with the Laravel Framework",
+        "keywords": [
+            "alert",
+            "laravel",
+            "notifier",
+            "sweet"
         ]
     },
     {

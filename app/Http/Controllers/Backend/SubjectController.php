@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Subject;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class SubjectController extends Controller
 {

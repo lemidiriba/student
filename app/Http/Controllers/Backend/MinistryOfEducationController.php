@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\MinistryOfEducation;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class MinistryOfEducationController extends Controller
 {

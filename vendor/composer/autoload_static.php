@@ -17,13 +17,13 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
@@ -35,9 +35,11 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'd04e9322f14ab3e66b5b68c6d1e15433' => __DIR__ . '/..' . '/arcanedev/log-viewer/constants.php',
         '24be6d98d7c305f36699ba4e34b6df3c' => __DIR__ . '/..' . '/arcanedev/log-viewer/helpers.php',
         '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
+        '6b34c85f7b1ad6faa15aa12109e030f2' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/functions.php',
         'eed9c7469f94573c0d97cc45de79b754' => __DIR__ . '/..' . '/spatie/laravel-html/src/helpers.php',
         '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
         '1e298922c3e2134d42dcdb03e6d5f55a' => __DIR__ . '/..' . '/torann/geoip/src/helpers.php',
+        'a806c12c6e24e7e4e900847766218dba' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -56,6 +58,7 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         ),
         'U' => 
         array (
+            'UxWeb\\SweetAlert\\' => 17,
             'UniSharp\\LaravelFilemanager\\' => 28,
         ),
         'T' => 
@@ -93,6 +96,7 @@ class ComposerStaticInita12466741001769882d1cce061974c02
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Spatie\\WebTinker\\' => 17,
+            'Spatie\\Searchable\\' => 18,
             'Spatie\\Permission\\' => 18,
             'Spatie\\Html\\' => 12,
             'Seld\\PharUtils\\' => 15,
@@ -100,6 +104,7 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         ),
         'R' => 
         array (
+            'RealRashid\\SweetAlert\\' => 22,
             'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
@@ -143,6 +148,7 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'J' => 
         array (
             'JsonSchema\\' => 11,
+            'Jorenvh\\Share\\' => 14,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -245,6 +251,10 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'UxWeb\\SweetAlert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert',
         ),
         'UniSharp\\LaravelFilemanager\\' => 
         array (
@@ -370,6 +380,10 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-web-tinker/src',
         ),
+        'Spatie\\Searchable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-searchable/src',
+        ),
         'Spatie\\Permission\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
@@ -385,6 +399,10 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'Seld\\JsonLint\\' => 
         array (
             0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
+        ),
+        'RealRashid\\SweetAlert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/realrashid/sweet-alert/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -486,6 +504,10 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
+        ),
+        'Jorenvh\\Share\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jorenvanhocht/laravel-share/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -820,6 +842,7 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'App\\Exceptions\\GeneralException' => __DIR__ . '/../..' . '/app/Exceptions/GeneralException.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Exceptions\\ReportableException' => __DIR__ . '/../..' . '/app/Exceptions/ReportableException.php',
+        'App\\Grade' => __DIR__ . '/../..' . '/app/Grade.php',
         'App\\Helpers\\Auth\\SocialiteHelper' => __DIR__ . '/../..' . '/app/Helpers/Auth/SocialiteHelper.php',
         'App\\Helpers\\General\\HtmlHelper' => __DIR__ . '/../..' . '/app/Helpers/General/HtmlHelper.php',
         'App\\Helpers\\General\\TimezoneHelper' => __DIR__ . '/../..' . '/app/Helpers/General/TimezoneHelper.php',
@@ -834,7 +857,6 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'App\\Http\\Controllers\\Backend\\Auth\\User\\UserStatusController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Auth/User/UserStatusController.php',
         'App\\Http\\Controllers\\Backend\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/DashboardController.php',
         'App\\Http\\Controllers\\Backend\\MinistryOfEducationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/MinistryOfEducationController.php',
-        'App\\Http\\Controllers\\Backend\\SchoolController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/SchoolController.php',
         'App\\Http\\Controllers\\Backend\\StudyMaterialController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/StudyMaterialController.php',
         'App\\Http\\Controllers\\Backend\\SubjectController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/SubjectController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -852,6 +874,8 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'App\\Http\\Controllers\\Frontend\\User\\AccountController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/User/AccountController.php',
         'App\\Http\\Controllers\\Frontend\\User\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/User/DashboardController.php',
         'App\\Http\\Controllers\\Frontend\\User\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/User/ProfileController.php',
+        'App\\Http\\Controllers\\Frontend\\User\\SchoolController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/User/SchoolController.php',
+        'App\\Http\\Controllers\\GradeController' => __DIR__ . '/../..' . '/app/Http/Controllers/GradeController.php',
         'App\\Http\\Controllers\\LanguageController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -882,7 +906,6 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'App\\Listeners\\Backend\\Auth\\User\\UserEventListener' => __DIR__ . '/../..' . '/app/Listeners/Backend/Auth/User/UserEventListener.php',
         'App\\Listeners\\Frontend\\Auth\\UserEventListener' => __DIR__ . '/../..' . '/app/Listeners/Frontend/Auth/UserEventListener.php',
         'App\\Mail\\Frontend\\Contact\\SendContact' => __DIR__ . '/../..' . '/app/Mail/Frontend/Contact/SendContact.php',
-        'App\\MinistryOfEducation' => __DIR__ . '/../..' . '/app/MinistryOfEducation.php',
         'App\\Models\\Auth\\BaseUser' => __DIR__ . '/../..' . '/app/Models/Auth/BaseUser.php',
         'App\\Models\\Auth\\PasswordHistory' => __DIR__ . '/../..' . '/app/Models/Auth/PasswordHistory.php',
         'App\\Models\\Auth\\Role' => __DIR__ . '/../..' . '/app/Models/Auth/Role.php',
@@ -894,7 +917,11 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'App\\Models\\Auth\\Traits\\Scope\\UserScope' => __DIR__ . '/../..' . '/app/Models/Auth/Traits/Scope/UserScope.php',
         'App\\Models\\Auth\\Traits\\SendUserPasswordReset' => __DIR__ . '/../..' . '/app/Models/Auth/Traits/SendUserPasswordReset.php',
         'App\\Models\\Auth\\User' => __DIR__ . '/../..' . '/app/Models/Auth/User.php',
+        'App\\Models\\MinistryOfEducation' => __DIR__ . '/../..' . '/app/Models/MinistryOfEducation.php',
         'App\\Models\\RecordingModel' => __DIR__ . '/../..' . '/app/Models/RecordingModel.php',
+        'App\\Models\\School' => __DIR__ . '/../..' . '/app/Models/School.php',
+        'App\\Models\\StudyMaterial' => __DIR__ . '/../..' . '/app/Models/StudyMaterial.php',
+        'App\\Models\\Subject' => __DIR__ . '/../..' . '/app/Models/Subject.php',
         'App\\Models\\Traits\\Uuid' => __DIR__ . '/../..' . '/app/Models/Traits/Uuid.php',
         'App\\Notifications\\Backend\\Auth\\UserAccountActive' => __DIR__ . '/../..' . '/app/Notifications/Backend/Auth/UserAccountActive.php',
         'App\\Notifications\\Frontend\\Auth\\UserNeedsConfirmation' => __DIR__ . '/../..' . '/app/Notifications/Frontend/Auth/UserNeedsConfirmation.php',
@@ -913,12 +940,11 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'App\\Repositories\\Backend\\Auth\\RoleRepository' => __DIR__ . '/../..' . '/app/Repositories/Backend/Auth/RoleRepository.php',
         'App\\Repositories\\Backend\\Auth\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/Backend/Auth/UserRepository.php',
         'App\\Repositories\\BaseRepository' => __DIR__ . '/../..' . '/app/Repositories/BaseRepository.php',
+        'App\\Repositories\\Frontend\\Auth\\MinistryOfEducationRepository' => __DIR__ . '/../..' . '/app/Repositories/Frontend/Auth/MinistryOfEducationRepository.php',
+        'App\\Repositories\\Frontend\\Auth\\SchoolRepository' => __DIR__ . '/../..' . '/app/Repositories/Frontend/Auth/SchoolRepository.php',
         'App\\Repositories\\Frontend\\Auth\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/Frontend/Auth/UserRepository.php',
         'App\\Repositories\\RepositoryContract' => __DIR__ . '/../..' . '/app/Repositories/RepositoryContract.php',
         'App\\Rules\\Auth\\UnusedPassword' => __DIR__ . '/../..' . '/app/Rules/Auth/UnusedPassword.php',
-        'App\\School' => __DIR__ . '/../..' . '/app/School.php',
-        'App\\StudyMaterial' => __DIR__ . '/../..' . '/app/StudyMaterial.php',
-        'App\\Subject' => __DIR__ . '/../..' . '/app/Subject.php',
         'Arcanedev\\LogViewer\\Commands\\CheckCommand' => __DIR__ . '/..' . '/arcanedev/log-viewer/src/Commands/CheckCommand.php',
         'Arcanedev\\LogViewer\\Commands\\ClearCommand' => __DIR__ . '/..' . '/arcanedev/log-viewer/src/Commands/ClearCommand.php',
         'Arcanedev\\LogViewer\\Commands\\Command' => __DIR__ . '/..' . '/arcanedev/log-viewer/src/Commands/Command.php',
@@ -3615,6 +3641,9 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
+        'Jorenvh\\Share\\Providers\\ShareServiceProvider' => __DIR__ . '/..' . '/jorenvanhocht/laravel-share/src/Providers/ShareServiceProvider.php',
+        'Jorenvh\\Share\\Share' => __DIR__ . '/..' . '/jorenvanhocht/laravel-share/src/Share.php',
+        'Jorenvh\\Share\\ShareFacade' => __DIR__ . '/..' . '/jorenvanhocht/laravel-share/src/ShareFacade.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'JsonSchema\\Constraints\\BaseConstraint' => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema/Constraints/BaseConstraint.php',
         'JsonSchema\\Constraints\\CollectionConstraint' => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema/Constraints/CollectionConstraint.php',
@@ -3766,6 +3795,7 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'League\\OAuth1\\Client\\Signature\\PlainTextSignature' => __DIR__ . '/..' . '/league/oauth1-client/src/Client/Signature/PlainTextSignature.php',
         'League\\OAuth1\\Client\\Signature\\Signature' => __DIR__ . '/..' . '/league/oauth1-client/src/Client/Signature/Signature.php',
         'League\\OAuth1\\Client\\Signature\\SignatureInterface' => __DIR__ . '/..' . '/league/oauth1-client/src/Client/Signature/SignatureInterface.php',
+        'MinistryOfEducationTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MinistryOfEducationTableSeeder.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
@@ -5470,6 +5500,13 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'RealRashid\\SweetAlert\\Console\\PublishCommand' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/Console/PublishCommand.php',
+        'RealRashid\\SweetAlert\\Facades\\Alert' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/Facades/Alert.php',
+        'RealRashid\\SweetAlert\\Storage\\AlertSessionStore' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/Storage/AlertSessionStore.php',
+        'RealRashid\\SweetAlert\\Storage\\SessionStore' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/Storage/SessionStore.php',
+        'RealRashid\\SweetAlert\\SweetAlertServiceProvider' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/SweetAlertServiceProvider.php',
+        'RealRashid\\SweetAlert\\ToSweetAlert' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/ToSweetAlert.php',
+        'RealRashid\\SweetAlert\\Toaster' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/Toaster.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -5640,6 +5677,15 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'Spatie\\Permission\\Traits\\HasPermissions' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Traits/HasPermissions.php',
         'Spatie\\Permission\\Traits\\HasRoles' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Traits/HasRoles.php',
         'Spatie\\Permission\\Traits\\RefreshesPermissionCache' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Traits/RefreshesPermissionCache.php',
+        'Spatie\\Searchable\\Exceptions\\InvalidModelSearchAspect' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/Exceptions/InvalidModelSearchAspect.php',
+        'Spatie\\Searchable\\Exceptions\\InvalidSearchableModel' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/Exceptions/InvalidSearchableModel.php',
+        'Spatie\\Searchable\\ModelSearchAspect' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/ModelSearchAspect.php',
+        'Spatie\\Searchable\\Search' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/Search.php',
+        'Spatie\\Searchable\\SearchAspect' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/SearchAspect.php',
+        'Spatie\\Searchable\\SearchResult' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/SearchResult.php',
+        'Spatie\\Searchable\\SearchResultCollection' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/SearchResultCollection.php',
+        'Spatie\\Searchable\\Searchable' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/Searchable.php',
+        'Spatie\\Searchable\\SearchableAttribute' => __DIR__ . '/..' . '/spatie/laravel-searchable/src/SearchableAttribute.php',
         'Spatie\\WebTinker\\Console\\InstallCommand' => __DIR__ . '/..' . '/spatie/laravel-web-tinker/src/Console/InstallCommand.php',
         'Spatie\\WebTinker\\Http\\Controllers\\WebTinkerController' => __DIR__ . '/..' . '/spatie/laravel-web-tinker/src/Http/Controllers/WebTinkerController.php',
         'Spatie\\WebTinker\\Http\\Middleware\\Authorize' => __DIR__ . '/..' . '/spatie/laravel-web-tinker/src/Http/Middleware/Authorize.php',
@@ -6463,6 +6509,12 @@ class ComposerStaticInita12466741001769882d1cce061974c02
         'UniSharp\\LaravelFilemanager\\Middlewares\\MultiUser' => __DIR__ . '/..' . '/unisharp/laravel-filemanager/src/Middlewares/MultiUser.php',
         'UserRoleTableSeeder' => __DIR__ . '/../..' . '/database/seeds/Auth/UserRoleTableSeeder.php',
         'UserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/Auth/UserTableSeeder.php',
+        'UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php',
+        'UxWeb\\SweetAlert\\LaravelSessionStore' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/LaravelSessionStore.php',
+        'UxWeb\\SweetAlert\\SessionStore' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/SessionStore.php',
+        'UxWeb\\SweetAlert\\SweetAlert' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/SweetAlert.php',
+        'UxWeb\\SweetAlert\\SweetAlertNotifier' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/SweetAlertNotifier.php',
+        'UxWeb\\SweetAlert\\SweetAlertServiceProvider' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/SweetAlertServiceProvider.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',

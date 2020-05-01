@@ -173,9 +173,9 @@ abstract class AbstractPaginator implements Htmlable
         }
 
         return $this->path()
-                        .(Str::contains($this->path(), '?') ? '&' : '?')
-                        .Arr::query($parameters)
-                        .$this->buildFragment();
+            . (Str::contains($this->path(), '?') ? '&' : '?')
+            . Arr::query($parameters)
+            . $this->buildFragment();
     }
 
     /**
@@ -253,7 +253,7 @@ abstract class AbstractPaginator implements Htmlable
      */
     protected function buildFragment()
     {
-        return $this->fragment ? '#'.$this->fragment : '';
+        return $this->fragment ? '#' . $this->fragment : '';
     }
 
     /**

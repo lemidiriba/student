@@ -18,7 +18,7 @@ class CreateMinistryOfEducationTable extends Migration
 
             $table->string('schoolname', 100)->nullable()->default('test School');
             $table->string('schooladdress', 100)->nullable()->default('test Sebeta');
-            $table->string('schoolrigon', 100)->nullable()->default('test rigion');
+            $table->string('schoolregion', 100)->nullable()->default('test rigion');
             $table->string('schoolphone', 100)->nullable()->default('0911113099');
             $table->string('schoolidentificationid', 100)->nullable()->default('identification non');
 

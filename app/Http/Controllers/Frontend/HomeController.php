@@ -16,4 +16,16 @@ class HomeController extends Controller
     {
         return view('frontend.index');
     }
+
+
+
+    /**
+     * About function
+     *
+     * @return void
+     */
+    public function about()
+    {
+        return view('frontend.about');
+    }
 }

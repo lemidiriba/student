@@ -49,19 +49,25 @@ return [
         'file'  => [
             'folder_name'  => 'files',
             'startup_view' => 'grid',
-            'max_size'     => 50000, // size in KB
+            'max_size'     => 500000, // size in KB
             'valid_mime'   => [
                 'image/jpeg',
                 'image/pjpeg',
                 'image/png',
                 'image/gif',
+                'application/pdf',
                 'image/svg+xml',
+                'application/docx',
+                'text/plain',
+                'image/vnd.microsoft.icon',
+                'image/x-icon',
+                'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/docx'
             ],
         ],
         'image' => [
             'folder_name'  => 'photos',
             'startup_view' => 'list',
-            'max_size'     => 50000, // size in KB
+            'max_size'     => 500000, // size in KB
             'valid_mime'   => [
                 'image/jpeg',
                 'image/pjpeg',
@@ -70,6 +76,13 @@ return [
                 'image/svg+xml',
                 'application/pdf',
                 'text/plain',
+                'application/pdf',
+                'application/docx',
+                'text/plain',
+                'image/vnd.microsoft.icon',
+                'image/x-icon',
+                'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/docx'
+
             ],
         ],
     ],
@@ -79,6 +92,8 @@ return [
     | Upload / Validation
     |--------------------------------------------------------------------------
      */
+
+
 
     'disk'                     => 'public',
 

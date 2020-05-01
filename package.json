@@ -1,6 +1,6 @@
 {
-    "name": "@etmsoftware/test",
-    "author": "ETM Software info@etmsoftwareplc.com",
+    "name": "@pantersoftware/test",
+    "author": "Panter Software info@pantersoftwareplc.com",
     "private": true,
     "license": "MIT",
     "scripts": {
@@ -34,10 +34,7 @@
         "resolve-url-loader": "^2.3.2",
         "sass": "^1.21.0",
         "sass-loader": "^7.1.0",
-        "sweetalert2": "^8.13.0",
-        "vue": "^2.6.10",
-        "vue-jest": "^3.0.4",
-        "vue-template-compiler": "^2.6.10"
+        "sweetalert2": "^8.13.0"
     },
     "browserslist": {
         "development": "last 1 version",

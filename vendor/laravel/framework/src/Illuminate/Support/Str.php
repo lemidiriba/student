@@ -53,6 +53,28 @@ class Str
     }
 
     /**
+     * Return the remainder of a string after the last occurrence of a given value.
+     *
+     * @param  string  $subject
+     * @param  string  $search
+     * @return string
+     */
+    public static function afterLast($subject, $search)
+    {
+        if ($search === '') {
+            return $subject;
+        }
+
+        $position = strrpos($subject, (string) $search);
+
+        if ($position === false) {
+            return $subject;
+        }
+
+        return substr($subject, $position + strlen($search));
+    }
+
+    /**
      * Transliterate a UTF-8 value to ASCII.
      *
      * @param  string  $value
@@ -63,7 +85,7 @@ class Str
     {
         $languageSpecific = static::languageSpecificCharsArray($language);
 
-        if (! is_null($languageSpecific)) {
+        if (!is_null($languageSpecific)) {
             $value = str_replace($languageSpecific[0], $languageSpecific[1], $value);
         }
 
@@ -129,7 +151,7 @@ class Str
     public static function containsAll($haystack, array $needles)
     {
         foreach ($needles as $needle) {
-            if (! static::contains($haystack, $needle)) {
+            if (!static::contains($haystack, $needle)) {
                 return false;
             }
         }
@@ -166,7 +188,7 @@ class Str
     {
         $quoted = preg_quote($cap, '/');
 
-        return preg_replace('/(?:'.$quoted.')+$/u', '', $value).$cap;
+        return preg_replace('/(?:' . $quoted . ')+$/u', '', $value) . $cap;
     }
 
     /**
@@ -199,7 +221,7 @@ class Str
             // pattern such as "library/*", making any string check convenient.
             $pattern = str_replace('\*', '.*', $pattern);
 
-            if (preg_match('#^'.$pattern.'\z#u', $value) === 1) {
+            if (preg_match('#^' . $pattern . '\z#u', $value) === 1) {
                 return true;
             }
         }
@@ -248,7 +270,7 @@ class Str
             return $value;
         }
 
-        return rtrim(mb_strimwidth($value, 0, $limit, '', 'UTF-8')).$end;
+        return rtrim(mb_strimwidth($value, 0, $limit, '', 'UTF-8')) . $end;
     }
 
     /**
@@ -272,13 +294,13 @@ class Str
      */
     public static function words($value, $words = 100, $end = '...')
     {
-        preg_match('/^\s*+(?:\S++\s*+){1,'.$words.'}/u', $value, $matches);
+        preg_match('/^\s*+(?:\S++\s*+){1,' . $words . '}/u', $value, $matches);
 
-        if (! isset($matches[0]) || static::length($value) === static::length($matches[0])) {
+        if (!isset($matches[0]) || static::length($value) === static::length($matches[0])) {
             return $value;
         }
 
-        return rtrim($matches[0]).$end;
+        return rtrim($matches[0]) . $end;
     }
 
     /**
@@ -318,7 +340,7 @@ class Str
 
         $lastWord = array_pop($parts);
 
-        return implode('', $parts).self::plural($lastWord, $count);
+        return implode('', $parts) . self::plural($lastWord, $count);
     }
 
     /**
@@ -357,7 +379,7 @@ class Str
         $result = array_shift($segments);
 
         foreach ($segments as $segment) {
-            $result .= (array_shift($replace) ?? $search).$segment;
+            $result .= (array_shift($replace) ?? $search) . $segment;
         }
 
         return $result;
@@ -416,7 +438,7 @@ class Str
     {
         $quoted = preg_quote($prefix, '/');
 
-        return $prefix.preg_replace('/^(?:'.$quoted.')+/u', '', $value);
+        return $prefix . preg_replace('/^(?:' . $quoted . ')+/u', '', $value);
     }
 
     /**
@@ -467,16 +489,16 @@ class Str
         // Convert all dashes/underscores into separator
         $flip = $separator === '-' ? '_' : '-';
 
-        $title = preg_replace('!['.preg_quote($flip).']+!u', $separator, $title);
+        $title = preg_replace('![' . preg_quote($flip) . ']+!u', $separator, $title);
 
         // Replace @ with the word 'at'
-        $title = str_replace('@', $separator.'at'.$separator, $title);
+        $title = str_replace('@', $separator . 'at' . $separator, $title);
 
         // Remove all characters that are not the separator, letters, numbers, or whitespace.
-        $title = preg_replace('![^'.preg_quote($separator).'\pL\pN\s]+!u', '', static::lower($title));
+        $title = preg_replace('![^' . preg_quote($separator) . '\pL\pN\s]+!u', '', static::lower($title));
 
         // Replace all separator characters and whitespace by a single separator
-        $title = preg_replace('!['.preg_quote($separator).'\s]+!u', $separator, $title);
+        $title = preg_replace('![' . preg_quote($separator) . '\s]+!u', $separator, $title);
 
         return trim($title, $separator);
     }
@@ -496,10 +518,10 @@ class Str
             return static::$snakeCache[$key][$delimiter];
         }
 
-        if (! ctype_lower($value)) {
+        if (!ctype_lower($value)) {
             $value = preg_replace('/\s+/u', '', ucwords($value));
 
-            $value = static::lower(preg_replace('/(.)(?=[A-Z])/u', '$1'.$delimiter, $value));
+            $value = static::lower(preg_replace('/(.)(?=[A-Z])/u', '$1' . $delimiter, $value));
         }
 
         return static::$snakeCache[$key][$delimiter] = $value;
@@ -563,7 +585,7 @@ class Str
      */
     public static function ucfirst($string)
     {
-        return static::upper(static::substr($string, 0, 1)).static::substr($string, 1);
+        return static::upper(static::substr($string, 0, 1)) . static::substr($string, 1);
     }
 
     /**
@@ -574,8 +596,8 @@ class Str
     public static function uuid()
     {
         return static::$uuidFactory
-                    ? call_user_func(static::$uuidFactory)
-                    : Uuid::uuid4();
+            ? call_user_func(static::$uuidFactory)
+            : Uuid::uuid4();
     }
 
     /**
@@ -772,7 +794,7 @@ class Str
     {
         static $languageSpecific;
 
-        if (! isset($languageSpecific)) {
+        if (!isset($languageSpecific)) {
             $languageSpecific = [
                 'bg' => [
                     ['х', 'Х', 'щ', 'Щ', 'ъ', 'Ъ', 'ь', 'Ь'],
