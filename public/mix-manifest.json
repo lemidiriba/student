@@ -1,8 +1,12 @@
 {
-    "/js/backend.js": "/js/backend.js",
-    "/js/frontend.js": "/js/frontend.js",
-    "/css/frontend.css": "/css/frontend.css",
-    "/css/backend.css": "/css/backend.css",
-    "/js/manifest.js": "/js/manifest.js",
-    "/js/vendor.js": "/js/vendor.js"
+    "/js/manifest.js": "/js/manifest.js?id=d91051ea7d0c9bd1981e",
+    "/js/manifest.js.map": "/js/manifest.js.map?id=a07956f82042cc418451",
+    "/js/vendor.js": "/js/vendor.js?id=85d5df34f6463e2e152b",
+    "/js/vendor.js.map": "/js/vendor.js.map?id=5d693f2f2f93b98bcdbc",
+    "/js/backend.js": "/js/backend.js?id=a7fcc7adb627cdee29cc",
+    "/js/backend.js.map": "/js/backend.js.map?id=3ccf9d3e347ed69f9fb0",
+    "/js/frontend.js": "/js/frontend.js?id=929a56ae09f9d8a48c2b",
+    "/css/frontend.css": "/css/frontend.css?id=291973e646d34822d76f",
+    "/css/backend.css": "/css/backend.css?id=02afe9ed6a8565014fa8",
+    "/js/frontend.js.map": "/js/frontend.js.map?id=9138fbecf46e1e624e3a"
 }
